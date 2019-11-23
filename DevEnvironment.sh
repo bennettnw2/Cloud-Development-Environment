@@ -125,7 +125,7 @@ make install
 cd ../..
 rm -rf mit*
 
-echo " Installing MIT-Scheme ********************************* "
+echo " Installing Java 11 ********************************* "
 yum -y install java-11-openjdk-devel
 
 echo " Configure some bash stuff ********************************* "
