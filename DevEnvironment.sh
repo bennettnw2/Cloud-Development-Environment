@@ -137,6 +137,10 @@ curl https://raw.githubusercontent.com/bennettnw2/DevEnvironment/master/.bash_pr
 echo " Configure some vim stuff ********************************* "
 curl https://raw.githubusercontent.com/bennettnw2/DevEnvironment/master/.vimrc -o /home/$USER/.vimrc
 pip3 install -U tablign #intall tablign for vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+mkdir .vim/colors/
+curl  https://raw.githubusercontent.com/vim-scripts/Relaxed-Green/master/colors/relaxedgreen.vim -o /home/$USER/.vim/colors
 
 echo " Configure some tmux stuff ********************************* "
 curl https://raw.githubusercontent.com/bennettnw2/tmuxSettings/master/.tmux.conf -o /home/$USER/.tmux.conf
